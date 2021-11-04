@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- We want to build a Web Server (HTTP Server with Python) -->
+    <!-- Python has a built-in HTTP-Server but it is only has basic secutirties. We use Flask or Django framework instead.  -->
+    <!-- Django is well-equipped tool while Flask is a micro-framework but it is simple, so we use Flask -->
+
+    <!-- First type and run: python -m venv venv (or python -m venv ( after cd..)) -->
+    <!-- Second: activate vnev: Web_Server\Scripts\activate.bat -->
+    <!-- Third: install Flask: pip install Flask -->
+    <!-- Fourth: *.html files should be located in a folder named templates -->
+    <!-- Fifth: *.css and *.js should be located in a folder named static -->
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link href="static/style.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='God.ico') }}">
+</head>
+<body>
+    About me.
+    <script src='static/script.js'></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- We want to build a Web Server (HTTP Server with Python) -->
+    <!-- Python has a built-in HTTP-Server but it is only has basic secutirties. We use Flask or Django framework instead.  -->
+    <!-- Django is well-equipped tool while Flask is a micro-framework but it is simple, so we use Flask -->
+
+    <!-- First type and run: python -m venv venv (or python -m venv ( after cd..)) -->
+    <!-- Second: activate vnev: Web_Server\Scripts\activate.bat -->
+    <!-- Third: install Flask: pip install Flask -->
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link href="static/style.css" type="text/css" rel="stylesheet">
+
+    <!-- It is "Templating Language". It is like running python here in HTML. Flask uses Jinja (a templating engine) underhood) -->
+    <!-- In this way, we could add dynamic contents in HTML -->
+    <!--  url_for()  is one of the templating methods in Flask -->
+    <!-- In Flask, everything between \{\{\}\} would be considered as Python Expression and would be evaluated. -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='God.ico') }}">
+</head>
+<body>
+    I am a web master
+    {{ name }}
+    {{ post_id}}
+    <script src='static/script.js'></script>
+</body>
+</html>
